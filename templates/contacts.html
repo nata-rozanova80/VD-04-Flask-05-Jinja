@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
     <h1>Контакты</h1>
-    <p>Вы можете связаться с нами по электронной почте: example@example.com</p>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/blog">Блог</a>
-        <a href="/contacts">Контакты</a>
-    </nav>
-</body>
-</html>
+    <p>Если у вас есть вопросы, свяжитесь с нами по телефону: (123) 456-7890</p>
+{% endblock %}

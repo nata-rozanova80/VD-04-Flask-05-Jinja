@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Главная{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif; /* Указание шрифта */
+        }
+        .navbar {
+            background-color: #9370DB;
+        }
+        .header {
+            background-color: #6A5ACD;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            position: relative;
+        }
+        .footer {
+            background-color: #6A5ACD;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive; /* Указание рукописного шрифта для заголовка */
+            font-size: 2rem; /* Уменьшение размера шрифта заголовка */
+            margin: 0; /* Убираем отступы */
+            font-weight: bold; /* Жирный шрифт */
+        }
+        h2 {
+            font-family: 'Dancing Script', cursive; /* Указание рукописного шрифта для подзаголовка */
+            font-size: 1.7rem; /* Размер шрифта подзаголовка */
+            position: relative;
+            top: 10px; /* Расстояние вниз от заголовка */
+            left: 330px; /* Немного правее по горизонтали */
+            font-weight: bold; /* Жирный шрифт */
+        }
+         .navbar {
+            background-color: #9370DB;
+        }
+        .navbar-nav .nav-link {
+            color: black; /* Цвет ссылок */
+            font-size: 1rem; /* Размер шрифта ссылок */
+            font-weight: normal; /* Нормальный вес шрифта */
+            transition: color 0.3s, font-weight 0.3s; /* Плавный переход */
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active { /* Объединение правил */
+            color: white; /* Цвет ссылок при наведении */
+            font-weight: bold; /* Жирный шрифт при наведении */
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            width: 90px; /* Ширина логотипа */
+            height: auto; /* Высота пропорционально ширине */
+            transform: translateY(-50%); /* Центрирование по вертикали */
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="static/DQ-round.png" alt="Логотип" />
+        <h1>Димаш Кудайберген</h1>
+        <h2>Кратко о творчестве</h2>
+        <div class="clearfix"></div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Главная</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/blog">Новые песни</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Контакты</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Поиск</button>
+            </form>
+        </div>
+    </nav>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <p>© 2024 Димаш Кудайберген. Все права защищены.</p>
+            <p>
+        <p>Контактная информация: (123) 456-7890</p>
+         <a href="https://www.facebook.com/dimash.official.dq" target="_blank" style="color: #ffffff; text-decoration: underline;">Facebook</a> |
+                <a  href="https://m.weibo.cn/u/6081887607href=" target="_blank" style="color: #ffffff; text-decoration: underline;">Weibo</a> |
+                <a href="https://www.instagram.com/reel/DA03VSKP0A_/?igsh=emJlZndoNWl3cnVx" target="_blank" style="color: #ffffff; text-decoration: underline;">Instagram</a>
+            </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
