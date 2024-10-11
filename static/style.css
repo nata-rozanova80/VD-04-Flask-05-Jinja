@@ -1,0 +1,54 @@
+@import 'nib';
+global-reset();
+
+black = #575757;
+gray = #F7F7F7;
+red = #F78686;
+blue = #86BBF7;
+
+.sun {
+  color: red;
+}
+.sat {
+  color: blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+html {
+  display: block;
+  height: auto;
+  color: black;
+}
+.bg,
+.border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  background: linear-gradient(to bottom, red, #BBFCFC);
+  z-index: -1;
+}
+.border {
+  border: 15px solid white;
+  z-index: 10;
+}
+
+
+<!-- Карточки-->
+
+.card-body-custom {
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    color: #000000; /* Цвет текста */
+    font-size: 13px; /* Размер текста */
+    /*background-color: #D8BFD8; /* Цвет фона */
+}
