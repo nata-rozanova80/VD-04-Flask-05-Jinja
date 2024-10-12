@@ -51,4 +51,27 @@ html {
     color: #000000; /* Цвет текста */
     font-size: 13px; /* Размер текста */
     /*background-color: #D8BFD8; /* Цвет фона */
+
+}
+
+.table a {
+    color: white; /* Устанавливает цвет ссылки по умолчанию */
+    transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.table a:hover {
+    color: blue; /* Цвет ссылки при наведении */
+}
+
+<!-- Для меню navbar-->
+.navbar-nav .nav-link {
+    color: black; /* Цвет ссылок по умолчанию */
+    font-weight: normal; /* Нормальный вес шрифта */
+    text-decoration: none; /* Убирает подчеркивание */
+    transition: color 0.3s, font-weight 0.3s; /* Плавный переход */
+}
+
+.navbar-nav .nav-link:hover {
+    color: blue; /* Цвет ссылок при наведении */
+    font-weight: bold; /* Жирный шрифт при наведении */
 }
